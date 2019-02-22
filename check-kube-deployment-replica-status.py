@@ -43,7 +43,7 @@ replicas_ready = response.status.ready_replicas
 
 # Build response message
 status_msg = (
-    '{} deployment has {} pods ready of the {} required replicas={}'.
+    '{} deployment has {} pods ready of the {} required | replicas={}'.
     format(deployment, replicas_ready, replicas_reqd, replicas_ready)
     )
 
