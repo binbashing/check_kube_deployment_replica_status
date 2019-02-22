@@ -14,7 +14,7 @@ For a given deployment,  the number of ready pods is compared against the specif
 ---
 
 ### Usage
-```
+```bash
 user@server:~$check-kube-deployment-replica-status.py
 usage: check-kube-deployment-replica-status.py [-h] -d DEPLOYMENT
                                                [-n NAMESPACE]
