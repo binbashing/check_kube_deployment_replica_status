@@ -15,7 +15,7 @@ For a given deployment,  the number of ready pods is compared against the specif
 
 ### Usage
 ```console
-user@server:~$ check-kube-deployment-replica-status.py
+user@server:~$ check-kube-deployment-replica-status.py -h
 usage: check-kube-deployment-replica-status.py [-h] -d DEPLOYMENT
                                                [-n NAMESPACE]
  
