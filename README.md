@@ -16,8 +16,8 @@ For a given deployment,  the number of ready pods is compared against the specif
 ### Usage
 ```
 $ check_kube_deployment_replicas -d deployment-foo -n namespace-bar
-OK, test deployment has 8 pods ready of the 8 required | replicas=8
-
+   OK, test deployment has 8 pods ready of the 8 required | replicas=8
+$
 ```
 ---
 
