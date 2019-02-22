@@ -41,19 +41,18 @@ if '%' in max_unavailable:
 replicas_reqd = replicas_specd - max_unavailable
 replicas_ready = response.status.ready_replicas
 
-# Build response message
 status_msg = (
-    '{} deployment has {} pods ready of the {} required | replicas={}'.
-    format(deployment, replicas_ready, replicas_reqd, replicas_ready)
+    f"{deployment} deployment has {replicas_ready} pods ready of the "
+    f"{replicas_reqd} required | replicas={replicas_ready}"
     )
 
 # Perform check
 if replicas_ready > replicas_reqd:
-    print('OK, {}'.format(status_msg))
+    print(f"OK, {status_msg}")
     exit(0)
 elif replicas_ready == replicas_reqd:
-    print('WARNING, {}'.format(status_msg))
+    print(f"WARNING, {status_msg}")
     exit(1)
 else:
-    print('ERROR, {}'.format(status_msg))
+    print(f"ERROR, {status_msg}")
     exit(2)
