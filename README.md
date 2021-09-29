@@ -4,7 +4,7 @@ Check script to monitor the replica set status of a Kubernetes Deployment
 ---
 
 ### How it works
-For a given deployment,  the number of ready pods is compared against the specified replics minus the Max Unavailable setting defined in the Rolling Update Strategy.  A metric of 'replicas' is ommited as performance data.
+For a given deployment,  the number of ready pods is compared against the defined number of replicas minus the `Max Unavailable` value defined in the Rolling Update Strategy.  A metric of 'replicas' is ommited as performance data.
 
 ##### Results:
 * OK: The number of ready pods exceeds the required number of pods
